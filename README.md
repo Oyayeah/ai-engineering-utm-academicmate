@@ -1,5 +1,5 @@
 # UTM AcademicMate — AI Academic Planning Assistant
-
+![UTM AcademicMate](src/academicmate.png)
 ## Project Overview
 
 UTM AcademicMate is an AI-powered academic planning assistant designed for students at UTM. It helps students organise their academic workload by extracting important information from uploaded PDFs and screenshots, maintaining a central deadline schedule, and providing reminders through WhatsApp.
