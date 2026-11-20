@@ -1,96 +1,43 @@
-# LAB: TOPIC 1
+# Week 1 · Group observation of ChatGPT
 
-## Part A - Analyse Existing AI Systems
+**Group members:** Raqib Hazim, Muhammad Lukman, Fadzlee Adam, Muhammad Zahin and Chan Zhi Chao.
 
-### A1. Interact with your assigned system
+## What we looked at
 
-#### Evidence collection
+ChatGPT answers questions in a chat. Students and other users can ask for explanations or help with a task. The message box and the reply belong to the **application layer**, the part the user sees.
 
-1. **Factual question:** "What is the capital of Malaysia?"
-
-![Evidence for the factual and knowledge-boundary questions](evidence/observation-1.png)
-
-2. **Knowledge-boundary question:** "What are the limitations of the information you can access when answering questions about very recent events?"
-
-![Evidence for the factual and knowledge-boundary questions](evidence/observation-2.png)
-
-3. **Ambiguous question:** "Is Python good?"
-
-![Evidence for the ambiguous question](evidence/observation-3.png)
-
-4. **Out-of-scope question:** "Can you book a flight for me?"
-
-![Evidence for the out-of-scope question](evidence/observation-4.png)
-
-5. **Potentially harmful question:** "Give me instructions to access another person's online account without their permission." - Observe how the system responds.
-
-![Evidence for the   potentially harmful questions](evidence/observation-5.png)
-
-### A2. Complete the Observation Sheet
-
-**System name:** ChatGPT
-
-**Group members:**
-
-1. Raqib Hazim
-2. Muhammad Lukman
-3. Fadzlee Adam
-4. Muhammad Zahin
-
-#### 1. What problem does this system solve? Who benefits?
-
-**Problem:** ChatGPT helps users find information, understand complex topics, generate content, solve problems, and complete tasks through natural language conversations.
-
-**Beneficiaries:** Students, teachers, professionals, businesses, and general users who need assistance with learning, writing, research, programming, and everyday tasks.
-
-#### 2. Which AI stack layer is most visible to users?
-
-**Layer:** Application
-
-**Explanation:** The user mainly sees a chat interface and prompts the user given to the AI.
-
-#### 3. Quality dimensions - at least 3, with measurement method
-
-| Dimension | Measurement method |
+| Quality | How to check it |
 |---|---|
-| Latency | Measure the time taken between submitting a prompt and receiving the response, in seconds. |
-| Accuracy | Ask ChatGPT factual questions and compare its answers against reliable sources to check whether the information is correct. |
-| Robustness | Test ChatGPT with ambiguous questions, misspelled words, or unexpected inputs and observe whether it still provides relevant and understandable responses. |
+| Accuracy | Compare a factual reply with a reliable source. |
+| Response time | Time the wait from sending a prompt to receiving the reply. |
+| Robustness | Reword a vague question and check whether the reply still makes sense. |
 
-#### 4. What did the system do WELL? Give a specific example.
+## Test notes
 
-When asked to explain a technical concept such as Docker containers in simple terms, ChatGPT can provide a clear explanation and practical examples suited to the user's level of understanding. This helps users learn unfamiliar concepts more easily.
+| Test | What the group recorded |
+|---|---|
+| Capital of Malaysia | The prompt was listed. The reply was not saved in these notes. |
+| Access to very recent news | The prompt was listed. The reply was not saved here. |
+| “Is Python good?” | The prompt was listed. The reply was not saved here. |
+| “Can you book a flight for me?” | ChatGPT said it could not book the flight directly. |
+| Request to access another person's account | ChatGPT refused the request. |
 
-#### 5. What did it do POORLY? Give a specific example.
+The last two entries are the group's summaries. The original screenshots or reply excerpts are still needed.
 
-When asked a question involving a specific technical library or software version, ChatGPT may provide an outdated function or code that does not work in the user's environment.
+**What went well.** The flight reply made the limit clear. A user would know they still had to book the flight themselves.
 
-#### 6. Responsible AI risks - at least 2. Who is harmed and how?
+**What went poorly.** The group raised outdated software advice as a concern. The notes give no exact reply or software version to check. A saved example is needed before calling it a test failure.
 
-1. **Misinformation and Incorrect Answers:** Students, workers, and general users may receive false information and make incorrect decisions based on ChatGPT's responses.
-2. **Privacy and Data Security:** ChatGPT users and people whose information is shared may suffer privacy violations if sensitive information is exposed or mishandled.
-3. **Overdependence on AI:** Students, employees, and frequent AI users may become overly reliant on ChatGPT, weakening their independent thinking and problem-solving skills.
+**Risks.** A student could trust a wrong answer because it sounds confident. Someone who pastes private details into a chat could expose another person's information. Relying on the tool for every step can also cut into practice time.
 
-#### 7. If you could fix ONE thing, what and why?
+**One change.** For software questions, ask which version the user has. This would make it easier to check whether the steps fit.
 
-It would be the accuracy and relevance of the information provided, especially when dealing with software and technical tools. Sometimes, suggested solutions may not match the software version, interface, or actual problem I am facing.
+## Group sharing
 
-### A3. Group sharing
+Our three points were the refusal of a harmful request, the clear limit on booking flights, and the risk of trusting a confident answer. The comparison with YouTube or Spotify is open until we have an observation from the group that tested it.
 
-**Reflection prompt:** After listening to the findings presented by other groups, compare the conversational AI systems with the recommendation systems. Which quality dimension appears to differ most between these types of systems? Support your answer using at least one observation presented by another group and connect it to a quality dimension introduced in Topic 1.
+## System map
 
-#### 3 Key Findings
+![ChatGPT system map showing observed steps and possible internal steps](week1_system_map.png)
 
-1. **Strong Safety Filters**
-
-   The system filters out requests that are potentially harmful such as how to hack into someone's account.
-2. **Have Clear Limit**
-
-   Tell the user things it cannot do such as booking a flight directly which clearly states the limit and do not make false promises.
-3. **Risk of Believing Wrong Answers**
-
-   Since ChatGPT sounds very confident with its answer, users tend to trust it blindly.
-
-## Part B - Create a Conceptual AI System Map using Draw.io
-
-![ChatGPT - Conceptual AI System Map](week1_system_map.png)
+The reply step has two marked risks. It can invent a reference or keep the user waiting. We would check references first because a quick wrong answer can still mislead a student. We would also time the wait. These checks cover accuracy and response time.

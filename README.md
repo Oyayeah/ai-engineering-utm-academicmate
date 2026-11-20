@@ -1,82 +1,45 @@
-# UTM AcademicMate — AI Academic Planning Assistant
-![UTM AcademicMate](src/academicmate.png)
-## Project Overview
+# UTM AcademicMate
 
-UTM AcademicMate is an AI-powered academic planning assistant designed for students at UTM. It helps students organise their academic workload by extracting important information from uploaded PDFs and screenshots, maintaining a central deadline schedule, and providing reminders through WhatsApp.
+![AcademicMate](src/academicmate.png)
 
-The system also uses Retrieval-Augmented Generation (RAG) to answer questions about uploaded course materials and support students in planning and prioritising their academic tasks.
+AcademicMate is a planned app for UTM undergraduates. It helps them track deadlines from an assignment PDF or a screenshot of a quiz notice.
 
-## Problem Statement
+## The problem
 
-University students may need to manage assignments, quizzes, examinations and course instructions distributed across multiple documents and learning resources. Manually organising these details can require additional effort and may cause important deadlines to be overlooked.
+A lecturer can put a due date inside a brief or post quiz times in a separate notice. A student taking several courses has to find those details and copy them into a planner. The app will read the files, show the line it used and let the student check the date.
 
-UTM AcademicMate aims to simplify this process through document information extraction, document-grounded question answering and automated deadline reminders.
+## Evidence
 
-## Project Objectives
+- One UTM course lists when each assignment starts and when students must hand it in. For Assignment 1, those are two different weeks. [UTM course example](https://people.utm.my/mnazri/semm-1921-intro-to-mechanical-engineering/)
+- A review of college studies found a link between time management and learning outcomes. How often UTM students miss deadlines is still an open question. [Liu, Ma and Jia, 2026](https://doi.org/10.3389/fpsyg.2026.1700298)
 
-1. Develop a module to extract academic activities and deadlines from uploaded PDFs and screenshots, with student verification.
-2. Implement a RAG-based assistant for course-related question answering and academic task prioritisation.
-3. Implement and evaluate a WhatsApp reminder mechanism for upcoming academic deadlines.
+## What other tools do
 
-## Target Users
+| Tool | What it helps with | What the student still needs |
+|---|---|---|
+| [MyStudyLife](https://mystudylife.com/) | Plans classes, homework and exams. | Check which line in a brief sets the deadline. |
+| [Google Calendar](https://support.google.com/calendar/answer/9901136?hl=en) | Puts a task on a chosen date. | Read the notice and enter the right date. |
+| [Todoist](https://www.todoist.com/help/todoist/features/introduction-to-deadlines-in-todoist-uMqbSLM6U) | Tracks a task and its deadline. | Check which submission rules go with that task. |
 
-Undergraduate students at Universiti Teknologi Malaysia who manage multiple courses and need support with academic planning.
+## Project goals
 
-## Main Features
+- **O1** Read the task and dates from an upload. Let the student check and correct them.
+- **O2** Answer questions using the uploaded instructions and list confirmed tasks in order of deadline.
+- **O3** Send WhatsApp reminders for confirmed tasks. Check that each reminder is sent once to the right student.
 
-- PDF and screenshot uploads
-- Academic activity and deadline extraction
-- Student verification and correction of extracted information
-- Unified academic task calendar
-- RAG-based question answering grounded in uploaded materials
-- Academic task prioritisation and study planning
-- WhatsApp deadline reminders
+## Data sources
 
-## Proposed Technologies
+Students upload either file on its own. An assignment PDF gives the task and any due date. A quiz screenshot gives whatever the lecturer made visible. A 30-minute time limit alone tells us nothing about when the quiz closes.
 
-- Python
-- Streamlit
-- PDF and image text extraction / OCR
-- Large Language Model (LLM)
-- Retrieval-Augmented Generation (RAG)
-- Vector database
-- SQLite
-- WhatsApp Business Platform API
+We will use these public examples for testing.
 
-These are proposed technologies and may be refined during development.
+- [MIT Problem Set 1, PDF](https://ocw.mit.edu/courses/6-851-advanced-data-structures-spring-2012/7737b417ec851a04c1ca02850cf44706_MIT6_851S12_ps1.pdf) — an assignment with a due date.
+- [MIT Quiz 1 announcement, PDF](https://web.mit.edu/6.033/2000/www/handouts/h8-quiz1.pdf) — screenshot the notice on page 1 to test the quiz date and times.
+- [UTM Maintenance Management, Quiz 1](https://people.utm.my/shamsul/maintenance-management-frsi-2153/) — a crop showing only the quiz title and weight tests a missing date.
 
-## Data Sources
+## Weekly progress
 
-Public academic documents:
-- UTM Academic Calendar: https://amd.utm.my/academic-calendar/
-- UTM Faculty of Computing undergraduate resources: https://comp.utm.my/undergraduate/
-- UTM Faculty of Science academic handbooks: https://science.utm.my/undergraduate/academic-handbook/
-
-Personalised runtime inputs:
-- Student-uploaded course outlines
-- Assignment instructions
-- Lecture PDFs
-- Screenshots of course information
-
-Only authorised materials will be used for testing. Private student information and restricted course documents will not be published in this repository.
-
-## Evaluation Plan
-
-The system will be evaluated using:
-- Accuracy of extracted academic dates and activity details
-- Accuracy and source relevance of RAG responses
-- Correctness of task prioritisation
-- Reliability of scheduled WhatsApp reminders
-- Handling of missing, ambiguous or conflicting information
-
-## Responsible AI Considerations
-
-The project will address inaccurate date extraction, unsupported AI answers, student data privacy, and notification failures. Students will be able to review extracted dates, and the assistant should indicate when the uploaded materials do not contain sufficient evidence to answer a question.
-
-## Project Scope
-
-The prototype will use student-uploaded PDFs and screenshots. Direct automated access to UTM eLearning is outside the initial scope.
-
-## Project Status
-
-Initial project scoping and repository setup.
+| Week | Focus | Files | Status |
+|---|---|---|---|
+| 1 | Study ChatGPT as a group. Define AcademicMate individually. | [Group notes](docs/week1_observation_sheet.md) · [Group map](docs/week1_system_map.png) · [Project scope](docs/week1_project_scope.md) | Individual scope ready. Group evidence pending. |
+| 2 | Decide what the app should do and how to test it. | [Requirements](docs/week2_requirements.md) · [Test plan](docs/week2_evaluation_criteria.md) · [Design](docs/week2_architecture_v1.png) · [Design choices](docs/week2_architecture_decisions.md) | Design and test plan ready. Tests are planned. |
