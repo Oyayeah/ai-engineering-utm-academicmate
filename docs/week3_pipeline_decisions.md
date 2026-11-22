@@ -6,7 +6,7 @@
 
 | Choice | What we found | What we kept |
 |---|---|---|
-| Split PDF text | Fixed cuts of 500 characters gave 109 pieces across five PDFs. Cutting at paragraph breaks gave 117. On the individual assignment, the counts were 10 and 11. | Use paragraph breaks to keep short instructions together for FR2. Long paragraphs can still split mid-word. Each piece names its source, but FR5 still needs page numbers. |
+| Split PDF text | Fixed cuts of 500 characters gave 109 pieces across five PDFs. Cutting at paragraph breaks gave 117. On the individual assignment, the counts were 10 and 11. | Use paragraph breaks to keep short instructions together for FR2. Long paragraphs can still split mid-word. The handout records the source file only. The [Week 4 follow-up](week4_data_quality_report.md) splits pieces at page breaks to support FR5. |
 | Size the screenshots | In a separate reading check, the words “Opened” and “Due” could be read by OCR on both 1413 × 837 copies. It missed both labels on both 224 × 224 copies. | Keep 1413 × 837 RGB copies so a student can read the dates. Resizing stretches each screenshot slightly. The notebook saves images only. |
 | Run a batch | The seven uploads are files we can read together. | Read the files, prepare them, then save the results (ETL). Rerun the batch when a notice changes. |
 | Keep uploads private | A screenshot shows a submission status. Permission to publish the course files is unknown. | For RAI3, keep the inputs and prepared content local. Share file counts and hashes as evidence. |
@@ -30,5 +30,7 @@ Part B saved 117 text records from 37 pages, two PNGs and an [image list](../dat
 | Inputs | Local copies of the seven files from `D:/raw` are in `data/raw/`. |
 | Part B | `data/processed/` holds the individual assignment’s `prepared_text.jsonl`. The other PDFs have folders S01, S03, S04 and S05. The two PNGs are in `images/`. |
 | Part C | The [PDF run](../data/pipeline_v1/documents/pipeline_manifest.json) sits beside the individual assignment’s text file. The other four PDF runs use the same source-ID folders. The [image run](../data/pipeline_v1/images/pipeline_manifest.json) lists both PNGs. |
+
+Week 3 covers file preparation only. University sign-in, private answers, public web lookup and automatic sends are planned features.
 
 All six runs passed the repeat check locally. Parts B and C saved the same text pieces. Their record fields differ, so the text files have different hashes. The [notebook](../notebooks/week3_pipeline.ipynb) shows the local results.

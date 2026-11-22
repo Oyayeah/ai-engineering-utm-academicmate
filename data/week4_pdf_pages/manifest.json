@@ -1,0 +1,50 @@
+{
+  "week3_manifest": "data/week3_manifest.json",
+  "sources": [
+    {
+      "source_id": "S01",
+      "source_sha256": "37241b1ac60890eb7dda0309bfeab7aaebcf7223bbbb08ddfdd4e1f2348471c3",
+      "week3_output_sha256": "17210fa8770ddfcbedceec8ac9b000ac48940786e9ed01c924b380309009c541",
+      "pages": 1,
+      "week3_records": 2,
+      "page_records": 2
+    },
+    {
+      "source_id": "S02",
+      "source_sha256": "86d34ad459760783c7a7ac7856cfee482f507ae6b684f4db2d61920295845bcc",
+      "week3_output_sha256": "4c0a08954ef5bd8396c97c8d1897a4c7a22acdb5cf57a05bc8dcf0782c24cffb",
+      "pages": 3,
+      "week3_records": 11,
+      "page_records": 13
+    },
+    {
+      "source_id": "S03",
+      "source_sha256": "886bab4ba1de49ca5bb6f6b6c77f230113fa4627528366e216919cc60e47bc95",
+      "week3_output_sha256": "f7ae0653461391358c83b1d9e26a2255d55fa8892ece8af720e99e12037015ac",
+      "pages": 12,
+      "week3_records": 33,
+      "page_records": 44
+    },
+    {
+      "source_id": "S04",
+      "source_sha256": "cc922691ced31d81415151507c98f2869b27bebba593d919e16df03575c7d470",
+      "week3_output_sha256": "e9767a3339126c550721e1e558c93c528406dcef53528e3beeaacad3f44bf6e1",
+      "pages": 6,
+      "week3_records": 29,
+      "page_records": 31
+    },
+    {
+      "source_id": "S05",
+      "source_sha256": "a742c156ca8b67657bdd8e807ef6287150f06d7b8eac55285b1a679df667d123",
+      "week3_output_sha256": "2e5c3f70a7f26e65be1cf772ab17898d27455a12e022f9ace213ec658de2df6e",
+      "pages": 15,
+      "week3_records": 42,
+      "page_records": 56
+    }
+  ],
+  "prepared_output": "data/week4_pdf_pages/passages-7a7695fe76ebe1d7777dec5f9ef3b7743f50ae4ef1f03351983ce3ad4a4d2d6c.jsonl",
+  "prepared_sha256": "7a7695fe76ebe1d7777dec5f9ef3b7743f50ae4ef1f03351983ce3ad4a4d2d6c",
+  "processing": "Split Week 3 records at PDF page breaks in source order; keep parent_record_id.",
+  "page_numbering": "PDF viewer pages, starting at 1",
+  "page_records": 146
+}

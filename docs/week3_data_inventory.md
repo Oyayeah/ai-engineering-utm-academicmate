@@ -1,6 +1,6 @@
 # Week 3 · Data inventory
 
-The supplied folder contains **five PDFs and two screenshots**. All 37 PDF pages had readable text. Both screenshots opened and contained dates.
+The supplied folder contains **five PDFs and two screenshots**. All 37 PDF pages had readable text. Both screenshots opened and contained dates. They are past course notices selected as examples.
 
 | ID | File in the raw folder | Use and inspection evidence | Date or version clue |
 |---|---|---|---|
@@ -14,6 +14,6 @@ The supplied folder contains **five PDFs and two screenshots**. All 37 PDF pages
 
 **Source and access.** These are student-supplied course files from `D:/raw`. The exact versions and permission to publish them are unknown. The local repo keeps copies under `data/raw/`. The raw files, prepared text and screenshots stay out of Git.
 
-**Why these files matter.** FR2 needs the task and its stated dates. FR5 needs a source for each answer. RAI3 covers private uploads and submission details. These files are inputs for the [Week 2 file reader](week2_architecture_v1.png).
+**Why these files matter.** These uploads represent what a student might bring from eLearning after university sign-in. FR2 needs the task and its stated dates. FR5 needs a source for each answer. RAI3 covers private uploads and submission details. These files are inputs for the [Week 2 file reader](week2_architecture_v1.png).
 
-**What Week 3 keeps.** Each PDF text record names its source. The handout joins the pages before splitting the text, so the page number is empty. Each screenshot links to an RGB copy. Reading dates from those images is a later step. [Notebook](../notebooks/week3_pipeline.ipynb) · [Source and output records](../data/week3_manifest.json)
+**What Week 3 keeps.** Each PDF text record names its source. The handout joins the pages before splitting the text, so the page number is empty in the Lab 3 export. The [Week 4 follow-up](../data/week4_pdf_pages/manifest.json) adds a PDF viewer page to each passage. Each screenshot links to an RGB copy. Reading dates from those images is a later step. [Notebook](../notebooks/week3_pipeline.ipynb) · [Source and output records](../data/week3_manifest.json)

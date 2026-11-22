@@ -9,3 +9,6 @@
 /data/processed/**/prepared_text.jsonl
 /data/pipeline_v1/documents/**/prepared_text.jsonl
 /data/pipeline_v1/images/prepared_*.png
+
+# Local course passages with PDF page numbers.
+/data/week4_pdf_pages/**/*.jsonl

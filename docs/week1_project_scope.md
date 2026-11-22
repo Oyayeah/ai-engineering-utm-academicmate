@@ -1,11 +1,12 @@
 # Week 1 · UTM AcademicMate
 
-**Domain:** Student planning in higher education.  
-**Users:** UTM undergraduates taking several courses.
+**Domain** · University course support and student planning.
+
+**Users** · UTM undergraduates taking several courses.
 
 ## Problem and evidence
 
-An assignment brief gives students work to hand in. A quiz notice tells them when to attend or when an online quiz closes. The details can be easy to mix up when copying them into a calendar.
+An assignment brief gives students work to hand in. A quiz notice tells them when to attend or when an online quiz closes. The details can be easy to mix up when copying them into a calendar. Students who want help understanding a brief may also have to decide whether to upload course material to an outside chat service. AcademicMate proposes a university-managed place to ask.
 
 - In UTM's mechanical engineering course, Assignment 1 starts in week 5 and is due in week 6. To set a reminder, a student still needs the actual date. [UTM assignment schedule](https://people.utm.my/mnazri/semm-1921-intro-to-mechanical-engineering/)
 - Two reviews give the wider background. Managing one's own work was a common focus in studies on putting off schoolwork. Better time management was also linked to better learning outcomes. Neither review counted missed UTM deadlines. [Salguero-Pazos and Reyes-de-Cózar, 2023](https://doi.org/10.1016/j.ijer.2023.102228) · [Liu, Ma and Jia, 2026](https://doi.org/10.3389/fpsyg.2026.1700298)
@@ -18,17 +19,17 @@ An assignment brief gives students work to hand in. A quiz notice tells them whe
 | [Google Calendar](https://support.google.com/calendar/answer/9901136?hl=en) | Lets a student enter a task and date. | The student still needs to pick the date from the notice. |
 | [Todoist](https://www.todoist.com/help/todoist/features/introduction-to-deadlines-in-todoist-uMqbSLM6U) | Separates a work date from a final deadline. | A deadline alone does not tell the student what to submit. |
 
-AcademicMate will link a task to the exact words in its source. A student can check “due Friday,” ask what files to submit and set a reminder from the date they confirm.
+A student signs in once with their UTM account on their device. While signed in, they can come back to upload an eLearning file or ask a new question. They can ask what to submit, read the cited passage and get an automatic reminder for a clear deadline after turning reminders on.
 
 ## Project goals
 
-- **O1** Read the task and dates from an upload. Let the student check and correct them.
-- **O2** Answer questions using the uploaded instructions and list confirmed tasks in order of deadline.
-- **O3** Send WhatsApp reminders for confirmed tasks. Check that each reminder is sent once to the right student.
+- **O1** Read the task and dates from an upload. Save clear dates automatically and ask about missing or conflicting ones.
+- **O2** Answer questions about the student’s assignment with a source. Show upcoming tasks in date order.
+- **O3** When a student turns on WhatsApp reminders, send one alert per task at the student’s chosen time.
 
 ## Data sources and scope
 
-One assignment PDF or quiz screenshot is enough. Students choose their own files. The app will read the text, flag missing dates and show where each answer came from. The calendar uses confirmed dates. Earlier deadlines come first. Students choose the reminder time. Students handle course logins and submissions themselves.
+One assignment PDF or quiz screenshot is enough. Students choose their own files. The app will read the text, flag missing dates and show where each answer came from. The calendar shows upcoming dates in order. Unclear dates go back to the student. A separate web tool can read approved public pages and cite them for background questions. File search, public lookup and scheduling are the assistant’s planned tools. The student handles eLearning downloads and submissions.
 
 | Public test source | What to look for |
 |---|---|
@@ -46,9 +47,9 @@ Both apps use retrieval-augmented generation (RAG). That means finding a passage
 
 | What could go wrong? | What we will check |
 |---|---|
-| A quiz opening time is saved as its deadline. | Show both labels. Ask the student to check the date before using it. |
+| A quiz opening time is saved as its deadline. | Match the closing label to the time. Hold a reminder if the wording is unclear. |
 | An answer adds a rule the lecturer never gave. | Show the source line or say the upload does not say. |
-| Another student sees a file or phone number. | Keep each student's files separate. Test access with two accounts. |
+| Another student sees a file or phone number. | Use university sign-in, check who owns each file, and test with two accounts. Check that public lookup sends no private text. |
 | A reminder goes twice or fails. | Track each scheduled send and show its status beside the task. |
 
 We will compare dates and answers with a hand-checked list, then test the calendar order and WhatsApp sends. Sending a real reminder needs access to the WhatsApp service.
