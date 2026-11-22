@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-20T03:10:50.986414+00:00",
+  "data_type": "documents",
+  "configuration": {
+    "chunk_size": 500,
+    "method": "paragraph-aware"
+  },
+  "processing_method": "paragraph-aware text chunks of 500 characters",
+  "sources": [
+    {
+      "path": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\Assignment 1[Individual].pdf",
+      "sha256": "86d34ad459760783c7a7ac7856cfee482f507ae6b684f4db2d61920295845bcc"
+    }
+  ],
+  "outputs": [
+    "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\documents\\prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\Assignment 1[Individual].pdf",
+      "output": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\documents\\prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "Assignment 1[Individual].pdf",
+    "characters": 4690,
+    "pages": 3
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "15674e307211e46ac427fcf61eab00f730d76cd70045389f6fde9a90133d7eb1"
+    ],
+    "output_bytes": [
+      6315
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}

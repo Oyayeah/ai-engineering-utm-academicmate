@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-20T03:10:55.675408+00:00",
+  "data_type": "documents/S05",
+  "configuration": {
+    "chunk_size": 500,
+    "method": "paragraph-aware"
+  },
+  "processing_method": "paragraph-aware text chunks of 500 characters",
+  "sources": [
+    {
+      "path": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\SAIA 2163 — Assignment 2_ Text Vectorization & Embedding Methods.pdf",
+      "sha256": "a742c156ca8b67657bdd8e807ef6287150f06d7b8eac55285b1a679df667d123"
+    }
+  ],
+  "outputs": [
+    "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\documents\\S05\\prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\SAIA 2163 — Assignment 2_ Text Vectorization & Embedding Methods.pdf",
+      "output": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\documents\\S05\\prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "SAIA 2163 — Assignment 2_ Text Vectorization & Embedding Methods.pdf",
+    "characters": 20773,
+    "pages": 15
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "6791196ef065cc6ebdbd28671f9234b7c77fdabc0d8af78c5870b6ddb7d549e1"
+    ],
+    "output_bytes": [
+      29146
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}

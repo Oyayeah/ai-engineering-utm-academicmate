@@ -1,0 +1,3 @@
+source,source_sha256,original_width,original_height,original_mode,output,output_width,output_height,processing
+Screenshot 2026-11-02 093501.png,2f792dced400a5e31939030517c406080b6020afe1a965299f0fb79776299062,1413,767,RGBA,data\processed\images\Screenshot 2026-11-02 093501_2f792dced400.png,1413,837,"convert_to_rgb=True; resize=(1413, 837)"
+Screenshot 2026-11-02 094157.png,99576e558a0177fa5dceb934699e2d710846fa4943279194a2875aabb13a33fb,1361,837,RGBA,data\processed\images\Screenshot 2026-11-02 094157_99576e558a01.png,1413,837,"convert_to_rgb=True; resize=(1413, 837)"

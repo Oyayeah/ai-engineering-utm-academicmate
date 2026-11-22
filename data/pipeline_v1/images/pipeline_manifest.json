@@ -1,0 +1,71 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-20T03:10:55.763314+00:00",
+  "data_type": "images",
+  "configuration": {
+    "resize": [
+      1413,
+      837
+    ],
+    "convert_rgb": true
+  },
+  "processing_method": "convert_rgb=True; resize=[1413, 837]",
+  "sources": [
+    {
+      "path": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\Screenshot 2026-11-02 093501.png",
+      "sha256": "2f792dced400a5e31939030517c406080b6020afe1a965299f0fb79776299062"
+    },
+    {
+      "path": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\Screenshot 2026-11-02 094157.png",
+      "sha256": "99576e558a0177fa5dceb934699e2d710846fa4943279194a2875aabb13a33fb"
+    }
+  ],
+  "outputs": [
+    "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\images\\prepared_001.png",
+    "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\images\\prepared_002.png"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\Screenshot 2026-11-02 093501.png",
+      "output": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\images\\prepared_001.png"
+    },
+    {
+      "source": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\Screenshot 2026-11-02 094157.png",
+      "output": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\images\\prepared_002.png"
+    }
+  ],
+  "inspection": {
+    "image_count": 2,
+    "sample": [
+      {
+        "name": "Screenshot 2026-11-02 093501.png",
+        "size": [
+          1413,
+          767
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "name": "Screenshot 2026-11-02 094157.png",
+        "size": [
+          1361,
+          837
+        ],
+        "mode": "RGBA"
+      }
+    ]
+  },
+  "validation": {
+    "output_count": 2,
+    "output_sha256": [
+      "9288380bdd8b04a478add13f166c495b1e3fbb90d220285f171212993a6a078c",
+      "376d1eb509506b8d07ec33faac15997d2c07e7711aa9bd6a314b27c57a4f0ff3"
+    ],
+    "output_bytes": [
+      125754,
+      93592
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}

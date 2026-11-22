@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-20T03:10:53.350359+00:00",
+  "data_type": "documents/S04",
+  "configuration": {
+    "chunk_size": 500,
+    "method": "paragraph-aware"
+  },
+  "processing_method": "paragraph-aware text chunks of 500 characters",
+  "sources": [
+    {
+      "path": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\Post Module Assessment_SAIA3453_final.pdf",
+      "sha256": "cc922691ced31d81415151507c98f2869b27bebba593d919e16df03575c7d470"
+    }
+  ],
+  "outputs": [
+    "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\documents\\S04\\prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\Post Module Assessment_SAIA3453_final.pdf",
+      "output": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\documents\\S04\\prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "Post Module Assessment_SAIA3453_final.pdf",
+    "characters": 12348,
+    "pages": 6
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "7e59ccb53a642c5a2ac053f9d157eddb82653bcdb23926e9790ef6123a0a345e"
+    ],
+    "output_bytes": [
+      15766
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}

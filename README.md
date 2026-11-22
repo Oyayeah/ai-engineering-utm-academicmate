@@ -43,3 +43,15 @@ We will use these public examples for testing.
 |---|---|---|---|
 | 1 | Study ChatGPT as a group. Define AcademicMate individually. | [Group notes](docs/week1_observation_sheet.md) · [Group map](docs/week1_system_map.png) · [Project scope](docs/week1_project_scope.md) | Individual scope ready. Group evidence pending. |
 | 2 | Decide what the app should do and how to test it. | [Requirements](docs/week2_requirements.md) · [Test plan](docs/week2_evaluation_criteria.md) · [Design](docs/week2_architecture_v1.png) · [Design choices](docs/week2_architecture_decisions.md) | Design and test plan ready. Tests are planned. |
+| 3 | Prepare five PDFs and two screenshots. | [Notebook](notebooks/week3_pipeline.ipynb) · [Inventory](docs/week3_data_inventory.md) · [Diagram](docs/week3_pipeline_diagram.png) · [Decisions](docs/week3_pipeline_decisions.md) · [Run evidence](data/week3_manifest.json) | All seven files passed the local checks. Colab run pending. |
+
+## Run Lab 3
+
+The [handout copy](notebooks/week3_handout_cells.ipynb) keeps the original example paths and settings. Use the project notebook below for the seven course files.
+
+1. Open [Google Colab](https://colab.research.google.com/) and upload `notebooks/week3_pipeline.ipynb`. Connect and run **Cell 1** to create the folders.
+2. Open the Files panel. Upload the five PDFs and two screenshots from `D:/raw` into `/content/week3_project/data/raw`. Keep their filenames.
+3. Run the remaining cells in order. The last code cell should show six **PASS** lines, one for each PDF and one for the two screenshots together.
+4. Choose **File → Download → Download .ipynb** to save the run in the repo’s `notebooks/` folder. Save the files under `week3_project/data` before Colab resets.
+
+The saved notebook was tested locally. In VS Code, use a Python notebook kernel with pandas, Pillow and pypdf. To run a local copy, replace the Colab project path in Cells 1, 3 and 7 with your repo path. Put the seven files in `data/raw/`. Full course text and images stay local.

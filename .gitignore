@@ -1,0 +1,11 @@
+# Week 3 course files stay local. File counts and run manifests can be shared.
+/data/raw/
+/data/processed/prepared_text.jsonl
+/data/processed/images/
+/data/processed/ocr/
+/data/pipeline_v1/documents/prepared_text.jsonl
+/data/pipeline_v1/images/images/
+/data/pipeline_v1/images/ocr/
+/data/processed/**/prepared_text.jsonl
+/data/pipeline_v1/documents/**/prepared_text.jsonl
+/data/pipeline_v1/images/prepared_*.png

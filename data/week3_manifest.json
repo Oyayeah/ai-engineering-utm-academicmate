@@ -1,0 +1,83 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-20T03:10:31.992284+00:00",
+  "records": [
+    {
+      "source_id": "S01",
+      "source_filename": "Activity for Module 2.pdf",
+      "source_sha256": "37241b1ac60890eb7dda0309bfeab7aaebcf7223bbbb08ddfdd4e1f2348471c3",
+      "prepared_output": "data\\processed\\S01\\prepared_text.jsonl",
+      "prepared_sha256": "17210fa8770ddfcbedceec8ac9b000ac48940786e9ed01c924b380309009c541",
+      "processing_note": "paragraph-aware-char-500",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    },
+    {
+      "source_id": "S02",
+      "source_filename": "Assignment 1[Individual].pdf",
+      "source_sha256": "86d34ad459760783c7a7ac7856cfee482f507ae6b684f4db2d61920295845bcc",
+      "prepared_output": "data\\processed\\prepared_text.jsonl",
+      "prepared_sha256": "4c0a08954ef5bd8396c97c8d1897a4c7a22acdb5cf57a05bc8dcf0782c24cffb",
+      "processing_note": "paragraph-aware-char-500",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    },
+    {
+      "source_id": "S03",
+      "source_filename": "NLP Final Project Question.pdf",
+      "source_sha256": "886bab4ba1de49ca5bb6f6b6c77f230113fa4627528366e216919cc60e47bc95",
+      "prepared_output": "data\\processed\\S03\\prepared_text.jsonl",
+      "prepared_sha256": "f7ae0653461391358c83b1d9e26a2255d55fa8892ece8af720e99e12037015ac",
+      "processing_note": "paragraph-aware-char-500",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    },
+    {
+      "source_id": "S04",
+      "source_filename": "Post Module Assessment_SAIA3453_final.pdf",
+      "source_sha256": "cc922691ced31d81415151507c98f2869b27bebba593d919e16df03575c7d470",
+      "prepared_output": "data\\processed\\S04\\prepared_text.jsonl",
+      "prepared_sha256": "e9767a3339126c550721e1e558c93c528406dcef53528e3beeaacad3f44bf6e1",
+      "processing_note": "paragraph-aware-char-500",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    },
+    {
+      "source_id": "S05",
+      "source_filename": "SAIA 2163 — Assignment 2_ Text Vectorization & Embedding Methods.pdf",
+      "source_sha256": "a742c156ca8b67657bdd8e807ef6287150f06d7b8eac55285b1a679df667d123",
+      "prepared_output": "data\\processed\\S05\\prepared_text.jsonl",
+      "prepared_sha256": "2e5c3f70a7f26e65be1cf772ab17898d27455a12e022f9ace213ec658de2df6e",
+      "processing_note": "paragraph-aware-char-500",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    },
+    {
+      "source_id": "S06",
+      "source_filename": "Screenshot 2026-11-02 093501.png",
+      "source_sha256": "2f792dced400a5e31939030517c406080b6020afe1a965299f0fb79776299062",
+      "prepared_output": "data\\processed\\images\\Screenshot 2026-11-02 093501_2f792dced400.png",
+      "prepared_sha256": "9288380bdd8b04a478add13f166c495b1e3fbb90d220285f171212993a6a078c",
+      "processing_note": "convert_to_rgb=True; resize=(1413, 837)",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    },
+    {
+      "source_id": "S07",
+      "source_filename": "Screenshot 2026-11-02 094157.png",
+      "source_sha256": "99576e558a0177fa5dceb934699e2d710846fa4943279194a2875aabb13a33fb",
+      "prepared_output": "data\\processed\\images\\Screenshot 2026-11-02 094157_99576e558a01.png",
+      "prepared_sha256": "376d1eb509506b8d07ec33faac15997d2c07e7711aa9bd6a314b27c57a4f0ff3",
+      "processing_note": "convert_to_rgb=True; resize=(1413, 837)",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    }
+  ]
+}

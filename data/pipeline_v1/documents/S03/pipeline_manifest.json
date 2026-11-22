@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-20T03:10:52.742958+00:00",
+  "data_type": "documents/S03",
+  "configuration": {
+    "chunk_size": 500,
+    "method": "paragraph-aware"
+  },
+  "processing_method": "paragraph-aware text chunks of 500 characters",
+  "sources": [
+    {
+      "path": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\NLP Final Project Question.pdf",
+      "sha256": "886bab4ba1de49ca5bb6f6b6c77f230113fa4627528366e216919cc60e47bc95"
+    }
+  ],
+  "outputs": [
+    "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\documents\\S03\\prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\raw\\NLP Final Project Question.pdf",
+      "output": "C:\\vscode\\oya\\ai-engineering-utm-academicmate\\data\\pipeline_v1\\documents\\S03\\prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "NLP Final Project Question.pdf",
+    "characters": 16285,
+    "pages": 12
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "97b957c215824a310ac03c15980787b12b1d9e48edf56dc0c5458c79f5877027"
+    ],
+    "output_bytes": [
+      21728
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}
